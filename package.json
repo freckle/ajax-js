@@ -1,6 +1,6 @@
 {
   "name": "@freckle/ajax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Freckle ajax helpers",
   "author": "Freckle",
   "license": "MIT",
@@ -15,8 +15,8 @@
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
-    "@freckle/maybe": "https://github.com/freckle/maybe-js.git#v2.2.0",
-    "@freckle/parser": "https://github.com/freckle/parser-js.git#v1.3.2",
+    "@freckle/maybe": "^2.1.0",
+    "@freckle/parser": "^1.3.3",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
