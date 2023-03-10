@@ -1,0 +1,19 @@
+// @flow
+import { type, ParserT } from "@freckle/parser";
+export type LinkName = "first" | "previous" | "next" | "last";
+export type LinkPathT = string;
+declare export function fromString(linkUrl: string): LinkPathT;
+declare export function toString(linkUrl: LinkPathT): string;
+export type LinksT = $ObjMapi<
+  { [k: LinkName]: any },
+  <name>(name) => LinkPathT
+>;
+declare export function parseLinkHeader(linkHeader: string | null): LinksT;
+declare type ResponseT<T> = {|
+  response: T,
+  links: LinksT,
+|};
+declare export function fetchWithLinks<T>(
+  url: string,
+  parseAttrs: ParserT<T>
+): Promise<ResponseT<T>>;

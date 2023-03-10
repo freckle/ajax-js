@@ -1,5 +1,0 @@
-// @flow
-export type MyType = {|
-  data: string,
-|};
-declare export var process: (input: MyType) => string;

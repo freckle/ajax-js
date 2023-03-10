@@ -1,20 +1,19 @@
-# npm Package Template
-
-Our custom template repository for creating a package published to npm.
-
-[Creating a repository from a template][docs].
-
-[docs]: https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template
-
-**NOTE**: Be sure to look for strings like "TODO", "Package name", or "package-name" and update
-them accordingly.
+# @freckle/ajax
 
 ## Install
 
 ```sh
-yarn add package-name
+yarn add @freckle/ajax
 ```
 
-## process(input)
+## Ajax helpers
 
-TODO: Document public API for package.
+See [ajax.ts](./src/ajax.ts).
+
+## Link header
+
+See [link-header.ts](./src/link-header.ts).
+
+---
+
+[LICENSE](./LICENSE)
