@@ -1,4 +1,4 @@
-import { type ParserT } from '@freckle/parser';
+import type { ParserT } from '@freckle/parser';
 export type LinkName = 'first' | 'previous' | 'next' | 'last';
 export type LinkPathT = string;
 export declare function fromString(linkUrl: string): LinkPathT;

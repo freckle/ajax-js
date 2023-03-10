@@ -1,5 +1,5 @@
 // @flow
-import { type, ParserT } from "@freckle/parser";
+import type { ParserT } from "@freckle/parser";
 export type LinkName = "first" | "previous" | "next" | "last";
 export type LinkPathT = string;
 declare export function fromString(linkUrl: string): LinkPathT;

@@ -6,3 +6,9 @@ all=error
 untyped-import=warn
 unclear-type=warn
 deprecated-utility=warn
+
+[libs]
+./lib/
+
+[declarations]
+.*/node_modules/.*.flow

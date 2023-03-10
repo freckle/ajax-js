@@ -1,5 +1,6 @@
 import isNil from 'lodash/isNil'
-import {Parser, type ParserT} from '@freckle/parser'
+import {Parser} from '@freckle/parser'
+import type {ParserT} from '@freckle/parser'
 
 export type LinkName = 'first' | 'previous' | 'next' | 'last'
 export type LinkPathT = string
