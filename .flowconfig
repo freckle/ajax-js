@@ -1,0 +1,8 @@
+[ignore]
+.*/malformed_package_json/.*
+
+[lints]
+all=error
+untyped-import=warn
+unclear-type=warn
+deprecated-utility=warn
