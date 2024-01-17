@@ -10,10 +10,5 @@ declare export {
   appendParamToRemedyCorsBug,
 } from "./ajax";
 export type { AjaxJsonCallOptionsT, AjaxFileDownloadOptionsT } from "./ajax";
-declare export {
-  fromString,
-  toString,
-  parseLinkHeader,
-  fetchWithLinks,
-} from "./link-header";
+declare export { fromString, toString, parseLinkHeader } from "./link-header";
 export type { LinkName, LinkPathT, LinksT } from "./link-header";

@@ -3,9 +3,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.fetchWithLinks = exports.parseLinkHeader = exports.toString = exports.fromString = void 0;
+exports.parseLinkHeader = exports.toString = exports.fromString = void 0;
 const isNil_1 = __importDefault(require("lodash/isNil"));
-const parser_1 = require("@freckle/parser");
 function fromString(linkUrl) {
     return linkUrl;
 }
@@ -49,26 +48,3 @@ const toLinkName = (rawName) => {
             throw new Error(`Could not parse ${rawName}`);
     }
 };
-function fetchWithLinks(url, parseAttrs) {
-    return new Promise((resolve, reject) => {
-        $.ajax({
-            url,
-            type: 'GET'
-        })
-            .then((response, _textStatus, jqXHR) => {
-            try {
-                const linkHeader = jqXHR.getResponseHeader('Link');
-                const links = parseLinkHeader(linkHeader);
-                const parsedResponse = parser_1.Parser.run(response, parseAttrs);
-                resolve({ response: parsedResponse, links });
-            }
-            catch (error) {
-                reject(error);
-            }
-        })
-            .fail((_jqXHR, _textStatus, errorThrown) => {
-            reject(new Error(errorThrown));
-        });
-    });
-}
-exports.fetchWithLinks = fetchWithLinks;
