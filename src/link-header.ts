@@ -1,6 +1,4 @@
 import isNil from 'lodash/isNil'
-import {Parser} from '@freckle/parser'
-import type {ParserT} from '@freckle/parser'
 
 export type LinkName = 'first' | 'previous' | 'next' | 'last'
 export type LinkPathT = string
@@ -55,31 +53,4 @@ const toLinkName = (rawName: string): LinkName => {
     default:
       throw new Error(`Could not parse ${rawName}`)
   }
-}
-
-type ResponseT<T> = {
-  response: T
-  links: LinksT
-}
-
-export function fetchWithLinks<T>(url: string, parseAttrs: ParserT<T>): Promise<ResponseT<T>> {
-  return new Promise((resolve, reject) => {
-    $.ajax({
-      url,
-      type: 'GET'
-    })
-      .then((response, _textStatus, jqXHR) => {
-        try {
-          const linkHeader = jqXHR.getResponseHeader('Link')
-          const links = parseLinkHeader(linkHeader)
-          const parsedResponse = Parser.run(response, parseAttrs)
-          resolve({response: parsedResponse, links})
-        } catch (error) {
-          reject(error)
-        }
-      })
-      .fail((_jqXHR, _textStatus, errorThrown) => {
-        reject(new Error(errorThrown))
-      })
-  })
 }

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.fetchWithLinks = exports.parseLinkHeader = exports.toString = exports.fromString = exports.appendParamToRemedyCorsBug = exports.checkUrlExistence = exports.sendBeacon = exports.ajaxFileDownload = exports.ajaxFormFileUpload = exports.ajaxFormCall = exports.ajaxJsonCall = exports.ajaxCall = void 0;
+exports.parseLinkHeader = exports.toString = exports.fromString = exports.appendParamToRemedyCorsBug = exports.checkUrlExistence = exports.sendBeacon = exports.ajaxFileDownload = exports.ajaxFormFileUpload = exports.ajaxFormCall = exports.ajaxJsonCall = exports.ajaxCall = void 0;
 var ajax_1 = require("./ajax");
 Object.defineProperty(exports, "ajaxCall", { enumerable: true, get: function () { return ajax_1.ajaxCall; } });
 Object.defineProperty(exports, "ajaxJsonCall", { enumerable: true, get: function () { return ajax_1.ajaxJsonCall; } });
@@ -14,4 +14,3 @@ var link_header_1 = require("./link-header");
 Object.defineProperty(exports, "fromString", { enumerable: true, get: function () { return link_header_1.fromString; } });
 Object.defineProperty(exports, "toString", { enumerable: true, get: function () { return link_header_1.toString; } });
 Object.defineProperty(exports, "parseLinkHeader", { enumerable: true, get: function () { return link_header_1.parseLinkHeader; } });
-Object.defineProperty(exports, "fetchWithLinks", { enumerable: true, get: function () { return link_header_1.fetchWithLinks; } });
