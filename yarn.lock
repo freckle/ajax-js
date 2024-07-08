@@ -517,11 +517,11 @@ __metadata:
   linkType: soft
 
 "@freckle/maybe@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "@freckle/maybe@npm:2.1.0"
+  version: 2.2.0
+  resolution: "@freckle/maybe@npm:2.2.0"
   dependencies:
     lodash: ^4.17.21
-  checksum: 2c3753d6d448725d25163261512b5f6598ecea8d68c4955d44fbda2a6f257a7a4f6a4b6ce52c4ba334302a7376064ee04fc2b814d954060a1d60379d5d5531a1
+  checksum: f8141d55b6dc43e54a841c98d1fa710b399f9a142e2a3c751eb4c5c56ffcc3736d702f09ee3bf6904011597bc0b74ab8fedb52ccb04bdf6dab2b809ef441ef9b
   languageName: node
   linkType: hard
 
