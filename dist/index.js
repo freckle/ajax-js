@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.parseLinkHeader = exports.toString = exports.fromString = exports.appendParamToRemedyCorsBug = exports.checkUrlExistence = exports.sendBeacon = exports.ajaxFileDownload = exports.ajaxFormFileUpload = exports.ajaxFormCall = exports.ajaxJsonCall = exports.ajaxCall = void 0;
+exports.parseLinkHeader = exports.fromString = exports.appendParamToRemedyCorsBug = exports.checkUrlExistence = exports.sendBeacon = exports.ajaxFileDownload = exports.ajaxFormFileUpload = exports.ajaxFormCall = exports.ajaxJsonCall = exports.ajaxCall = void 0;
 var ajax_1 = require("./ajax");
 Object.defineProperty(exports, "ajaxCall", { enumerable: true, get: function () { return ajax_1.ajaxCall; } });
 Object.defineProperty(exports, "ajaxJsonCall", { enumerable: true, get: function () { return ajax_1.ajaxJsonCall; } });
