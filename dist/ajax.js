@@ -1,6 +1,13 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.appendParamToRemedyCorsBug = exports.checkUrlExistence = exports.sendBeacon = exports.ajaxFileDownload = exports.ajaxFormFileUpload = exports.ajaxFormCall = exports.ajaxJsonCall = exports.ajaxCall = void 0;
+exports.ajaxCall = ajaxCall;
+exports.ajaxJsonCall = ajaxJsonCall;
+exports.ajaxFormCall = ajaxFormCall;
+exports.ajaxFormFileUpload = ajaxFormFileUpload;
+exports.ajaxFileDownload = ajaxFileDownload;
+exports.sendBeacon = sendBeacon;
+exports.checkUrlExistence = checkUrlExistence;
+exports.appendParamToRemedyCorsBug = appendParamToRemedyCorsBug;
 const maybe_1 = require("@freckle/maybe");
 function ajaxCall(options) {
     const { url, method, data, contentType, dataType, cache, xhrFields, timeout } = options;
@@ -15,7 +22,6 @@ function ajaxCall(options) {
             .fail(reject);
     });
 }
-exports.ajaxCall = ajaxCall;
 function ajaxJsonCall(options) {
     const { url, method, data, cache, xhrFields, timeout } = options;
     // If we are not sending any data along with the request then there is no need to specify the contentType
@@ -26,7 +32,6 @@ function ajaxJsonCall(options) {
     const dataType = 'json';
     return ajaxCall({ url, method, data, contentType, dataType, cache, xhrFields, timeout });
 }
-exports.ajaxJsonCall = ajaxJsonCall;
 function ajaxFormCall(options) {
     const { url, method, data } = options;
     const contentType = 'application/x-www-form-urlencoded';
@@ -34,7 +39,6 @@ function ajaxFormCall(options) {
     const cache = false;
     return ajaxCall({ url, method, data, contentType, dataType, cache });
 }
-exports.ajaxFormCall = ajaxFormCall;
 function ajaxFormFileUpload(options) {
     const { url, data, method, timeout } = options;
     const timeoutParam = timeout !== null && timeout !== undefined ? { timeout } : {};
@@ -44,7 +48,6 @@ function ajaxFormFileUpload(options) {
             .fail(reject);
     });
 }
-exports.ajaxFormFileUpload = ajaxFormFileUpload;
 function ajaxFileDownload(options) {
     const { url, accept, defaultFilename } = options;
     return new Promise((resolve, reject) => {
@@ -98,7 +101,6 @@ function ajaxFileDownload(options) {
         request.send();
     });
 }
-exports.ajaxFileDownload = ajaxFileDownload;
 function contentDispositionFilename(mDisposition) {
     return (0, maybe_1.mthen)(mDisposition, disposition => (0, maybe_1.mthen)(disposition.trim().match(/attachment; filename="(.*)"/), ([_ignore, filename]) => filename));
 }
@@ -111,7 +113,6 @@ function sendBeacon(options) {
     }
     catch (e) { }
 }
-exports.sendBeacon = sendBeacon;
 function checkUrlExistence(url) {
     return new Promise(resolve => {
         ajaxCall({
@@ -128,7 +129,6 @@ function checkUrlExistence(url) {
         });
     });
 }
-exports.checkUrlExistence = checkUrlExistence;
 /**
  * This hack gets around a Chrome caching bug wherein the audio request generated
  * by the audio web api leads to chrome caching a response that does not contain
@@ -144,4 +144,3 @@ exports.checkUrlExistence = checkUrlExistence;
 function appendParamToRemedyCorsBug(path) {
     return path.includes('?') ? `${path}&via=xmlHttpRequest` : `${path}?via=xmlHttpRequest`;
 }
-exports.appendParamToRemedyCorsBug = appendParamToRemedyCorsBug;

@@ -3,16 +3,16 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.parseLinkHeader = exports.toString = exports.fromString = void 0;
+exports.fromString = fromString;
+exports.toString = toString;
+exports.parseLinkHeader = parseLinkHeader;
 const isNil_1 = __importDefault(require("lodash/isNil"));
 function fromString(linkUrl) {
     return linkUrl;
 }
-exports.fromString = fromString;
 function toString(linkUrl) {
     return linkUrl;
 }
-exports.toString = toString;
 /* Code Imported from https://gist.github.com/niallo/3109252
  * Allows us to read the Link Header and transform it in a usable object
  */
@@ -36,7 +36,6 @@ function parseLinkHeader(linkHeader) {
     });
     return links;
 }
-exports.parseLinkHeader = parseLinkHeader;
 const toLinkName = (rawName) => {
     switch (rawName) {
         case 'first':
