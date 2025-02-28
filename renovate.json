@@ -1,6 +1,19 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
-  ]
+    "config:recommended",
+    ":label(renovate)",
+    ":automergePatch",
+    ":automergeMinor",
+    ":automergePin",
+    ":automergeDigest",
+    ":prConcurrentLimit10",
+    ":prHourlyLimitNone",
+    ":renovatePrefix",
+    ":semanticCommits",
+    ":timezone(America/New_York)",
+    "schedule:daily",
+    "schedule:automergeDaily"
+  ],
+  "minimumReleaseAge": "5 days"
 }
