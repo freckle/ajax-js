@@ -5,7 +5,6 @@
     ":label(renovate)",
     ":automergePatch",
     ":automergeMinor",
-    ":automergePin",
     ":automergeDigest",
     ":prConcurrentLimit10",
     ":prHourlyLimitNone",
