@@ -14,5 +14,8 @@
     "schedule:daily",
     "schedule:automergeDaily"
   ],
-  "minimumReleaseAge": "5 days"
+  "minimumReleaseAge": "5 days",
+  "lockFileMaintenance": {
+    "platformAutomerge": false
+  },
 }
