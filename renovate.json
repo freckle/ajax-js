@@ -11,8 +11,7 @@
     ":renovatePrefix",
     ":semanticCommits",
     ":timezone(America/New_York)",
-    "schedule:daily",
-    "schedule:automergeDaily"
+    "schedule:daily"
   ],
   "minimumReleaseAge": "5 days",
   "platformAutomerge": false
