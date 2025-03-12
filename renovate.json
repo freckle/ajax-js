@@ -1,6 +1,6 @@
 {
   "extends": [
-    "github>freckle/github-repo-heath/renovate-config"
+    "github>freckle/renovate-config"
   ],
   "minimumReleaseAge": "0 days"
 }
