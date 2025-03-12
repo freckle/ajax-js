@@ -1,18 +1,6 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended",
-    ":label(renovate)",
-    ":automergePatch",
-    ":automergeMinor",
-    ":automergeDigest",
-    ":prConcurrentLimit10",
-    ":prHourlyLimitNone",
-    ":renovatePrefix",
-    ":semanticCommits",
-    ":timezone(America/New_York)",
-    "schedule:daily"
+    "github>freckle/github-repo-heath/renovate-config"
   ],
-  "minimumReleaseAge": "5 days",
-  "platformAutomerge": false
+  "minimumReleaseAge": "0 days"
 }
