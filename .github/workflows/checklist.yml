@@ -5,6 +5,9 @@ on:
 
 jobs:
   checklist:
+    permissions:
+      contents: read
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
       - uses: freckle/commenter-action@main
