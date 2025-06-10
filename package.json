@@ -22,8 +22,8 @@
     "@types/jest": "^29.5.12",
     "@types/jquery": "^3.5.16",
     "@types/lodash": "^4.14.191",
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.5.0",
+    "jest": "^30.0.0",
+    "jest-environment-jsdom": "^30.0.0",
     "prettier": "^3.3.2",
     "ts-jest": "^29.2.0",
     "typescript": "^5.5.3"
