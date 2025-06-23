@@ -16,7 +16,11 @@
   },
   "dependencies": {
     "@freckle/maybe": "^2.1.0",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "socks-proxy-agent": "latest"
+  },
+  "resolutions": {
+    "socks-proxy-agent": "^8.0.5"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
