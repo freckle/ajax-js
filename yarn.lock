@@ -767,7 +767,7 @@ __metadata:
   dependencies:
     "@freckle/maybe": ^2.1.0
     "@types/jest": ^30.0.0
-    "@types/jquery": ^3.5.16
+    "@types/jquery": ^3.5.33
     "@types/lodash": ^4.14.191
     jest: ^30.0.0
     jest-environment-jsdom: ^30.0.0
@@ -1425,7 +1425,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jquery@npm:^3.5.16":
+"@types/jquery@npm:^3.5.33":
   version: 3.5.33
   resolution: "@types/jquery@npm:3.5.33"
   dependencies:
