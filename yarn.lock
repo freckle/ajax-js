@@ -775,7 +775,7 @@ __metadata:
     prettier: ^3.6.2
     socks-proxy-agent: latest
     ts-jest: ^29.4.4
-    typescript: ^5.5.3
+    typescript: ^5.5.4
   languageName: unknown
   linkType: soft
 
@@ -4697,7 +4697,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^5.5.3":
+"typescript@npm:^5.5.4":
   version: 5.9.3
   resolution: "typescript@npm:5.9.3"
   bin:
@@ -4707,7 +4707,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^5.5.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@^5.5.4#~builtin<compat/typescript>":
   version: 5.9.3
   resolution: "typescript@patch:typescript@npm%3A5.9.3#~builtin<compat/typescript>::version=5.9.3&hash=5786d5"
   bin:
