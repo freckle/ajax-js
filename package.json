@@ -28,7 +28,7 @@
     "@types/lodash": "^4.17.20",
     "jest": "^30.0.0",
     "jest-environment-jsdom": "^30.0.0",
-    "prettier": "^3.3.2",
+    "prettier": "^3.3.3",
     "ts-jest": "^29.2.0",
     "typescript": "^5.5.3"
   },
