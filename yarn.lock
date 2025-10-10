@@ -765,7 +765,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@freckle/ajax@workspace:."
   dependencies:
-    "@freckle/maybe": ^2.1.0
+    "@freckle/maybe": ^2.2.0
     "@types/jest": ^30.0.0
     "@types/jquery": ^3.5.33
     "@types/lodash": ^4.17.20
@@ -779,7 +779,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@freckle/maybe@npm:^2.1.0":
+"@freckle/maybe@npm:^2.2.0":
   version: 2.2.0
   resolution: "@freckle/maybe@npm:2.2.0"
   dependencies:
