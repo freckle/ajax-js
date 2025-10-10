@@ -15,7 +15,7 @@
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
-    "@freckle/maybe": "^2.1.0",
+    "@freckle/maybe": "^2.2.0",
     "lodash": "^4.17.21",
     "socks-proxy-agent": "latest"
   },
