@@ -772,7 +772,7 @@ __metadata:
     jest: ^30.2.0
     jest-environment-jsdom: ^30.2.0
     lodash: ^4.17.21
-    prettier: ^3.7.3
+    prettier: ^3.7.4
     socks-proxy-agent: latest
     ts-jest: ^29.4.6
     typescript: ^5.9.3
@@ -4123,12 +4123,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.7.3":
-  version: 3.7.3
-  resolution: "prettier@npm:3.7.3"
+"prettier@npm:^3.7.4":
+  version: 3.7.4
+  resolution: "prettier@npm:3.7.4"
   bin:
     prettier: bin/prettier.cjs
-  checksum: fc3da17f1394f7e634eee762b1a42e0324cc6d78f8f966c746aed82c2712d24451db919e9dfa381b6fb4684b9cb04e25cfd08f47c55da92a814f9fa1e2427433
+  checksum: 955e37e87b1151ca3b3282463f5295f4c415821884791df152ff66e6eb1c5257115153cccba61b13962546100dd00ae45670ff27077dcab04c977d84036eaf80
   languageName: node
   linkType: hard
 
