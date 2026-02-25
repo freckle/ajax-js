@@ -767,7 +767,7 @@ __metadata:
   dependencies:
     "@freckle/maybe": ^2.2.0
     "@types/jest": ^30.0.0
-    "@types/jquery": ^3.5.33
+    "@types/jquery": ^3.5.34
     "@types/lodash": ^4.17.23
     jest: ^30.2.0
     jest-environment-jsdom: ^30.2.0
@@ -1425,12 +1425,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jquery@npm:^3.5.33":
-  version: 3.5.33
-  resolution: "@types/jquery@npm:3.5.33"
+"@types/jquery@npm:^3.5.34":
+  version: 3.5.34
+  resolution: "@types/jquery@npm:3.5.34"
   dependencies:
     "@types/sizzle": "*"
-  checksum: 63a654cb5a141f794f8d2704891b851742bf40d1ef9c8ce7c38900b6e6aedded9324273d52a7a8ab5ddc17b395991b51e566119d4c14b160fef11342bdf18b3a
+  checksum: cf405356e62740291459505cb9987090dca3a8ccbfdbbe3d469308fc404468b22e31b275ac9097dad7d6b26391169bf0209a32dfee96106e81ec262d23861999
   languageName: node
   linkType: hard
 
