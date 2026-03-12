@@ -20,7 +20,7 @@
     "socks-proxy-agent": "latest"
   },
   "resolutions": {
-    "socks-proxy-agent": "^8.0.5"
+    "socks-proxy-agent": "^9.0.0"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
