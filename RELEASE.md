@@ -1,34 +1,14 @@
-# Releases
+# Release
 
-## Versioning
+This project uses [semantic-release](https://github.com/semantic-release/semantic-release)
+with [conventional commits](https://www.conventionalcommits.org/) to trigger releases.
 
-Versioned tags will exist, such as `v1.0.0` and `v2.1.1`. Branches will exist
-for each major version, such as `v1` or `v2` and contain the newest version in
-that series.
+To trigger a release in this project, merge a commit to `main` prefixed with:
 
-## Release process
+1. `fix:` to trigger a patch release,
+1. `feat:` to trigger minor, or
+1. Use `<type>!:` or the `BREAKING CHANGES: <change>` footer to trigger major
 
-Given a latest version of v1.0.1,
+Pre-releases can be made by pushing to an `rc/*` branch.
 
-Is this a new major version?
-
-If yes,
-
-```console
-git checkout main
-git pull
-git checkout -b v2
-git tag -s -m v2.0.0 v2.0.0
-git push --follow-tags
-```
-
-Otherwise,
-
-```console
-git checkout main
-git pull
-git checkout v1
-git merge --ff-only -
-git tag -s -m v1.0.2 v1.0.2    # or v1.1.0
-git push --follow-tags
-```
+For more details, see the [Semantic Release](https://illuminate.atlassian.net/wiki/spaces/PENG/pages/17952735277/Semantic+Release) documentation.
