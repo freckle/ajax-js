@@ -6,7 +6,7 @@
 yarn add @freckle/ajax
 ```
 
-## Versioning and release process
+## Release
 
 See [RELEASE.md](./RELEASE.md).
 
