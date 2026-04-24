@@ -765,7 +765,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@freckle/ajax@workspace:."
   dependencies:
-    "@freckle/maybe": "npm:^2.2.0"
+    "@freckle/maybe": "npm:^2.3.0"
     "@types/jest": "npm:^30.0.0"
     "@types/jquery": "npm:^4.0.0"
     "@types/lodash": "npm:^4.17.24"
@@ -779,12 +779,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@freckle/maybe@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@freckle/maybe@npm:2.2.0"
+"@freckle/maybe@npm:^2.3.0":
+  version: 2.3.0
+  resolution: "@freckle/maybe@npm:2.3.0"
   dependencies:
-    lodash: "npm:^4.17.21"
-  checksum: 10c0/e076b4558db65ffa81a6c9875f10b126827e282dbad076d7473f9b20dfb862ea942add9eb92e667fc4455a5327d0a7eb3fe6328410dcc7d24cd13eabe3491b60
+    lodash: "npm:^4.18.1"
+  checksum: 10c0/e06ee53e1d4156257d61024c6352da71e18b0e09a881ff1959102f1b6bd2a6aad837c92b3616dbcf15500d880b7941029e431000836fab4ca2043b8d4cdad48d
   languageName: node
   linkType: hard
 
@@ -3575,7 +3575,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash@npm:^4.17.21, lodash@npm:^4.18.1":
+"lodash@npm:^4.18.1":
   version: 4.18.1
   resolution: "lodash@npm:4.18.1"
   checksum: 10c0/757228fc68805c59789e82185135cf85f05d0b2d3d54631d680ca79ec21944ec8314d4533639a14b8bcfbd97a517e78960933041a5af17ecb693ec6eecb99a27
