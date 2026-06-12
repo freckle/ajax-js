@@ -4364,14 +4364,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"socks-proxy-agent@npm:^10.0.0":
-  version: 10.0.0
-  resolution: "socks-proxy-agent@npm:10.0.0"
+"socks-proxy-agent@npm:^10.1.0":
+  version: 10.1.0
+  resolution: "socks-proxy-agent@npm:10.1.0"
   dependencies:
     agent-base: "npm:9.0.0"
     debug: "npm:^4.3.4"
     socks: "npm:^2.8.3"
-  checksum: 10/24bc7a7e22b867c6804e7e4b3f49a28db6dd8fc68d3f5c968a9a0694adba638480b541d514226b77607ac90cf2fffced46517226c8b1965e61c47bb6a46d19d0
+  checksum: 10/b7ca31a62e1164bdf8ade52a4c0d9b2701a7095fa52e7be047d61abf9ddf3e0820c3080373a59268b67d43901f16c51c780bb7ac925f17eb77171ed00071724a
   languageName: node
   linkType: hard
 
