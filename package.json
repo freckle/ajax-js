@@ -25,7 +25,7 @@
   "devDependencies": {
     "@types/jest": "^30.0.0",
     "@types/jquery": "^4.0.1",
-    "@types/lodash": "^4.17.24",
+    "@types/lodash": "^4.17.25",
     "jest": "^30.4.2",
     "jest-environment-jsdom": "^30.4.1",
     "prettier": "^3.9.6",
