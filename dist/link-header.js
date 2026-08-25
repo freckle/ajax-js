@@ -1,12 +1,8 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.fromString = fromString;
 exports.toString = toString;
 exports.parseLinkHeader = parseLinkHeader;
-const isNil_1 = __importDefault(require("lodash/isNil"));
 function fromString(linkUrl) {
     return linkUrl;
 }
@@ -17,7 +13,7 @@ function toString(linkUrl) {
  * Allows us to read the Link Header and transform it in a usable object
  */
 function parseLinkHeader(linkHeader) {
-    if ((0, isNil_1.default)(linkHeader) || linkHeader.trim().length === 0) {
+    if (linkHeader == null || linkHeader.trim().length === 0) {
         throw new Error('Expected non-zero Link header');
     }
     // Split parts by comma

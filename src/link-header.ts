@@ -1,5 +1,3 @@
-import isNil from 'lodash/isNil'
-
 export type LinkName = 'first' | 'previous' | 'next' | 'last'
 export type LinkPathT = string
 
@@ -20,7 +18,7 @@ export type LinksT = {
  */
 
 export function parseLinkHeader(linkHeader: string | null): LinksT {
-  if (isNil(linkHeader) || linkHeader.trim().length === 0) {
+  if (linkHeader == null || linkHeader.trim().length === 0) {
     throw new Error('Expected non-zero Link header')
   }
 
