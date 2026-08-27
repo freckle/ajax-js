@@ -11,7 +11,6 @@ type DataTypeT = 'json' | 'text'
 type AjaxCallOptionsT = {
   url: string
   method: MethodT
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any
   contentType?: ContentTypeT | null
   dataType: DataTypeT
@@ -60,7 +59,6 @@ export type AjaxJsonCallOptionsT =
   | {
       url: string
       method: MethodWithRawDataT
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       data?: any
       cache?: boolean
       xhrFields?: {
@@ -83,7 +81,6 @@ export function ajaxJsonCall<T>(options: AjaxJsonCallOptionsT): Promise<T> {
 type AjaxFormCallOptionsT = {
   url: string
   method: MethodT
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data?: any
 }
 
@@ -97,7 +94,6 @@ export function ajaxFormCall<T>(options: AjaxFormCallOptionsT): Promise<T> {
 
 type AjaxFormFileUploadOptionsT = {
   url: string
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   data: any
   method?: MethodT
   timeout?: number
@@ -196,7 +192,6 @@ function contentDispositionFilename(mDisposition?: string | null): string | unde
 type SendBeaconOptionsT = {
   url: string
   data: {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [x: string]: any
   } // Object to stringify
 }
@@ -207,7 +202,6 @@ export function sendBeacon(options: SendBeaconOptionsT) {
   try {
     const jsonData = JSON.stringify(data)
     window.navigator.sendBeacon(url, jsonData)
-    // eslint-disable-next-line no-empty
   } catch (e) {}
 }
 
