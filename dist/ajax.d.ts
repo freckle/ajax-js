@@ -55,12 +55,12 @@ export type AjaxFileDownloadOptionsT = {
     defaultFilename: string;
 };
 export declare function ajaxFileDownload(options: AjaxFileDownloadOptionsT): Promise<void>;
-type SendBeaconOptionsT = Inexact<{
+type SendBeaconOptionsT = {
     url: string;
-    data: Inexact<{
+    data: {
         [x: string]: any;
-    }>;
-}>;
+    };
+};
 export declare function sendBeacon(options: SendBeaconOptionsT): void;
 export declare function checkUrlExistence(url: string): Promise<boolean>;
 /**

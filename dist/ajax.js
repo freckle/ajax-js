@@ -109,7 +109,6 @@ function sendBeacon(options) {
     try {
         const jsonData = JSON.stringify(data);
         window.navigator.sendBeacon(url, jsonData);
-        // eslint-disable-next-line no-empty
     }
     catch (e) { }
 }
