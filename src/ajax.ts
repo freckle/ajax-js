@@ -193,13 +193,13 @@ function contentDispositionFilename(mDisposition?: string | null): string | unde
   )
 }
 
-type SendBeaconOptionsT = Inexact<{
+type SendBeaconOptionsT = {
   url: string
-  data: Inexact<{
+  data: {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     [x: string]: any
-  }> // Object to stringify
-}>
+  } // Object to stringify
+}
 
 export function sendBeacon(options: SendBeaconOptionsT) {
   const {url, data} = options
