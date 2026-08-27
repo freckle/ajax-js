@@ -15,11 +15,7 @@
     "format": "prettier --write 'src/**/*.ts'"
   },
   "dependencies": {
-    "@freckle/maybe": "^2.3.0",
-    "socks-proxy-agent": "latest"
-  },
-  "resolutions": {
-    "socks-proxy-agent": "^10.1.0"
+    "@freckle/maybe": "^2.3.0"
   },
   "devDependencies": {
     "@types/jest": "^30.0.0",
