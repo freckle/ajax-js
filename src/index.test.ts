@@ -1,3 +1,5 @@
+import {describe, expect, test} from 'vitest'
+
 import {parseLinkHeader} from './link-header'
 
 describe('parseLinkHeader', () => {

@@ -9,7 +9,7 @@
     "declaration": true,
     "outDir": "dist",
     "rootDir": "src",
-    "types": ["jest", "node", "jquery"]
+    "types": ["jquery"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["src/**/*.test.ts"]
