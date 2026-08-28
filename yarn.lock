@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@freckle/ajax@workspace:."
   dependencies:
-    "@freckle/maybe": "npm:^2.3.0"
+    "@freckle/maybe": "npm:^2.3.1"
     "@types/jquery": "npm:^4.0.1"
     prettier: "npm:^3.9.6"
     typescript: "npm:^6.0.3"
@@ -17,12 +17,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@freckle/maybe@npm:^2.3.0":
-  version: 2.3.0
-  resolution: "@freckle/maybe@npm:2.3.0"
-  dependencies:
-    lodash: "npm:^4.18.1"
-  checksum: 10/743e59ea248789e5bcd7dd5ab57c8d2f842e78b9c8cb34dd903a01034850e031a169144f27047daa909a7b03c36b6fb5423d92e396a4b89afcb64d3c2f960a4b
+"@freckle/maybe@npm:^2.3.1":
+  version: 2.3.1
+  resolution: "@freckle/maybe@npm:2.3.1"
+  checksum: 10/57542a0b9993e41c87a713276f17049fb07c95e681d738892ef023a46f190b60c541d70398e8e34452c384bef7b5854920250e2b3d38ef4b32826e6c424286da
   languageName: node
   linkType: hard
 
@@ -908,13 +906,6 @@ __metadata:
     lightningcss-win32-x64-msvc:
       optional: true
   checksum: 10/9b3b5db404af352fe5861926b9909281d29bede175539035c1a01e1ad4dcee8bb6f871e8e3d01a67a85e9e1cd18a63e52871a48cf62feab4d1aa868d4f2c3c2e
-  languageName: node
-  linkType: hard
-
-"lodash@npm:^4.18.1":
-  version: 4.18.1
-  resolution: "lodash@npm:4.18.1"
-  checksum: 10/306fea53dfd39dad1f03d45ba654a2405aebd35797b673077f401edb7df2543623dc44b9effbb98f69b32152295fff725a4cec99c684098947430600c6af0c3f
   languageName: node
   linkType: hard
 
