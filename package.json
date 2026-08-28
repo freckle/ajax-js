@@ -21,7 +21,7 @@
     "@types/jquery": "^4.0.1",
     "prettier": "^3.9.6",
     "typescript": "^6.0.3",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "packageManager": "yarn@4.18.0"
 }
