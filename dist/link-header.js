@@ -1,18 +1,13 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.fromString = fromString;
-exports.toString = toString;
-exports.parseLinkHeader = parseLinkHeader;
-function fromString(linkUrl) {
+export function fromString(linkUrl) {
     return linkUrl;
 }
-function toString(linkUrl) {
+export function toString(linkUrl) {
     return linkUrl;
 }
 /* Code Imported from https://gist.github.com/niallo/3109252
  * Allows us to read the Link Header and transform it in a usable object
  */
-function parseLinkHeader(linkHeader) {
+export function parseLinkHeader(linkHeader) {
     if (linkHeader == null || linkHeader.trim().length === 0) {
         throw new Error('Expected non-zero Link header');
     }
