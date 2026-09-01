@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@freckle/maybe':
-        specifier: ^2.3.1
-        version: 2.3.1
+        specifier: ^3.0.0
+        version: 3.0.0
     devDependencies:
       '@eslint/js':
         specifier: ^10.0.1
@@ -180,8 +180,8 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@freckle/maybe@2.3.1':
-    resolution: {integrity: sha512-lhomXb70nQbq1ASaDDc7PoPMrT7kav/FcYsoD6yfFetreN03SbZb1dawxAZxMs7ojx0eqGHaStut9A+hA60QoQ==}
+  '@freckle/maybe@3.0.0':
+    resolution: {integrity: sha512-Fbur69nzwdHxz6PvwXrD3wurBnJa2/YcE4La8kDJ8IGsbCKdgWBk6i/6d3VbS8SCYJbkAjR+ghdN8BfN0lG0pg==}
 
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
@@ -1505,7 +1505,7 @@ snapshots:
 
   '@exodus/bytes@1.15.1': {}
 
-  '@freckle/maybe@2.3.1': {}
+  '@freckle/maybe@3.0.0': {}
 
   '@humanfs/core@0.19.2':
     dependencies:
