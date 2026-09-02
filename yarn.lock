@@ -9,7 +9,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@freckle/ajax@workspace:."
   dependencies:
-    "@freckle/maybe": "npm:^2.3.1"
+    "@freckle/maybe": "npm:^3.0.0"
     "@types/jquery": "npm:^4.0.1"
     prettier: "npm:^3.9.6"
     typescript: "npm:^6.0.3"
@@ -17,10 +17,10 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@freckle/maybe@npm:^2.3.1":
-  version: 2.3.1
-  resolution: "@freckle/maybe@npm:2.3.1"
-  checksum: 10/57542a0b9993e41c87a713276f17049fb07c95e681d738892ef023a46f190b60c541d70398e8e34452c384bef7b5854920250e2b3d38ef4b32826e6c424286da
+"@freckle/maybe@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@freckle/maybe@npm:3.0.0"
+  checksum: 10/1c7e658f3d98fc59f8b70bc3426edb6c71e07113eaeea870dcce7ad026ff093d60ee27fc6c64637fe82a938ed463cb9f05889f72a517c296b3dde4842c163533
   languageName: node
   linkType: hard
 
