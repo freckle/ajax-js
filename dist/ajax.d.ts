@@ -4,7 +4,7 @@ type DataTypeT = 'json' | 'text';
 type AjaxCallOptionsT = {
     url: string;
     method: MethodT;
-    data?: any;
+    data?: unknown;
     contentType?: ContentTypeT | null;
     dataType: DataTypeT;
     cache?: boolean;
@@ -28,7 +28,7 @@ export type AjaxJsonCallOptionsT = {
 } | {
     url: string;
     method: MethodWithRawDataT;
-    data?: any;
+    data?: unknown;
     cache?: boolean;
     xhrFields?: {
         withCredentials: boolean;
@@ -39,12 +39,12 @@ export declare function ajaxJsonCall<T>(options: AjaxJsonCallOptionsT): Promise<
 type AjaxFormCallOptionsT = {
     url: string;
     method: MethodT;
-    data?: any;
+    data?: unknown;
 };
 export declare function ajaxFormCall<T>(options: AjaxFormCallOptionsT): Promise<T>;
 type AjaxFormFileUploadOptionsT = {
     url: string;
-    data: any;
+    data: FormData;
     method?: MethodT;
     timeout?: number;
 };
@@ -58,7 +58,7 @@ export declare function ajaxFileDownload(options: AjaxFileDownloadOptionsT): Pro
 type SendBeaconOptionsT = {
     url: string;
     data: {
-        [x: string]: any;
+        [x: string]: unknown;
     };
 };
 export declare function sendBeacon(options: SendBeaconOptionsT): void;

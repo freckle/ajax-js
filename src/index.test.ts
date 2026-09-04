@@ -1,8 +1,14 @@
 import {describe, expect, test} from 'vitest'
 
-import {parseLinkHeader} from './link-header'
+import {fromString, parseLinkHeader, toString} from './link-header.js'
 
-describe('parseLinkHeader', () => {
+describe('fromString / toString', () => {
+  test('round-trip a link path unchanged', () => {
+    expect(toString(fromString('/3/students?limit=10'))).toBe('/3/students?limit=10')
+  })
+})
+
+describe(parseLinkHeader.name, () => {
   test('should correctly return the link when only one is given', () => {
     const res = parseLinkHeader('</3/students?limit=10&schools.id=2>; rel="first"')
     expect(res).toEqual({first: '/3/students?limit=10&schools.id=2'})
@@ -16,5 +22,22 @@ describe('parseLinkHeader', () => {
       first: '/3/students?limit=10&schools.id=2',
       next: '/3/students?limit=10&position=94&schools.id=2'
     })
+  })
+
+  test('should skip parts that are not a url/rel pair', () => {
+    const res = parseLinkHeader('</3/students>; rel="first", garbage')
+    expect(res).toEqual({first: '/3/students'})
+  })
+
+  test('should throw on a missing header', () => {
+    expect(() => parseLinkHeader(null)).toThrow('Expected non-zero Link header')
+  })
+
+  test('should throw on a blank header', () => {
+    expect(() => parseLinkHeader('   ')).toThrow('Expected non-zero Link header')
+  })
+
+  test('should throw on an unrecognized rel name', () => {
+    expect(() => parseLinkHeader('</3/students>; rel="middle"')).toThrow('Could not parse middle')
   })
 })

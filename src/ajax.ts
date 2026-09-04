@@ -8,10 +8,14 @@ type ContentTypeT =
   | 'text/csv'
 type DataTypeT = 'json' | 'text'
 
+// jQuery's own `data` type is narrower than what $.ajax accepts at runtime: it
+// omits FormData, and rejects payloads whose values aren't statically known.
+type JQueryAjaxDataT = JQuery.PlainObject | string | undefined
+
 type AjaxCallOptionsT = {
   url: string
   method: MethodT
-  data?: any
+  data?: unknown
   contentType?: ContentTypeT | null
   dataType: DataTypeT
   cache?: boolean
@@ -30,7 +34,7 @@ export function ajaxCall<T>(options: AjaxCallOptionsT): Promise<T> {
     $.ajax({
       url,
       type: method,
-      data,
+      data: data as JQueryAjaxDataT,
       dataType,
       cache,
       xhrFields,
@@ -59,7 +63,7 @@ export type AjaxJsonCallOptionsT =
   | {
       url: string
       method: MethodWithRawDataT
-      data?: any
+      data?: unknown
       cache?: boolean
       xhrFields?: {
         withCredentials: boolean
@@ -81,7 +85,7 @@ export function ajaxJsonCall<T>(options: AjaxJsonCallOptionsT): Promise<T> {
 type AjaxFormCallOptionsT = {
   url: string
   method: MethodT
-  data?: any
+  data?: unknown
 }
 
 export function ajaxFormCall<T>(options: AjaxFormCallOptionsT): Promise<T> {
@@ -94,7 +98,7 @@ export function ajaxFormCall<T>(options: AjaxFormCallOptionsT): Promise<T> {
 
 type AjaxFormFileUploadOptionsT = {
   url: string
-  data: any
+  data: FormData
   method?: MethodT
   timeout?: number
 }
@@ -106,7 +110,7 @@ export function ajaxFormFileUpload<T>(options: AjaxFormFileUploadOptionsT): Prom
     $.ajax({
       url,
       type: method ? method : 'POST',
-      data,
+      data: data as unknown as JQueryAjaxDataT,
       contentType: false,
       processData: false,
       ...timeoutParam
@@ -192,7 +196,7 @@ function contentDispositionFilename(mDisposition?: string | null): string | unde
 type SendBeaconOptionsT = {
   url: string
   data: {
-    [x: string]: any
+    [x: string]: unknown
   } // Object to stringify
 }
 
@@ -202,7 +206,10 @@ export function sendBeacon(options: SendBeaconOptionsT) {
   try {
     const jsonData = JSON.stringify(data)
     window.navigator.sendBeacon(url, jsonData)
-  } catch (e) {}
+  } catch {
+    // Beacons are fire-and-forget telemetry: an unserializable payload or a
+    // browser without sendBeacon must not surface to the caller.
+  }
 }
 
 export function checkUrlExistence(url: string): Promise<boolean> {

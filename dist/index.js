@@ -1,16 +1,2 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.parseLinkHeader = exports.fromString = exports.appendParamToRemedyCorsBug = exports.checkUrlExistence = exports.sendBeacon = exports.ajaxFileDownload = exports.ajaxFormFileUpload = exports.ajaxFormCall = exports.ajaxJsonCall = exports.ajaxCall = void 0;
-var ajax_1 = require("./ajax");
-Object.defineProperty(exports, "ajaxCall", { enumerable: true, get: function () { return ajax_1.ajaxCall; } });
-Object.defineProperty(exports, "ajaxJsonCall", { enumerable: true, get: function () { return ajax_1.ajaxJsonCall; } });
-Object.defineProperty(exports, "ajaxFormCall", { enumerable: true, get: function () { return ajax_1.ajaxFormCall; } });
-Object.defineProperty(exports, "ajaxFormFileUpload", { enumerable: true, get: function () { return ajax_1.ajaxFormFileUpload; } });
-Object.defineProperty(exports, "ajaxFileDownload", { enumerable: true, get: function () { return ajax_1.ajaxFileDownload; } });
-Object.defineProperty(exports, "sendBeacon", { enumerable: true, get: function () { return ajax_1.sendBeacon; } });
-Object.defineProperty(exports, "checkUrlExistence", { enumerable: true, get: function () { return ajax_1.checkUrlExistence; } });
-Object.defineProperty(exports, "appendParamToRemedyCorsBug", { enumerable: true, get: function () { return ajax_1.appendParamToRemedyCorsBug; } });
-var link_header_1 = require("./link-header");
-Object.defineProperty(exports, "fromString", { enumerable: true, get: function () { return link_header_1.fromString; } });
-Object.defineProperty(exports, "toString", { enumerable: true, get: function () { return link_header_1.toString; } });
-Object.defineProperty(exports, "parseLinkHeader", { enumerable: true, get: function () { return link_header_1.parseLinkHeader; } });
+export { ajaxCall, ajaxJsonCall, ajaxFormCall, ajaxFormFileUpload, ajaxFileDownload, sendBeacon, checkUrlExistence, appendParamToRemedyCorsBug } from './ajax.js';
+export { fromString, toString, parseLinkHeader } from './link-header.js';

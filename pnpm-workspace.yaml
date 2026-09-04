@@ -1,0 +1,2 @@
+minimumReleaseAgeExclude:
+  - '@freckle/maybe@3.0.0'
