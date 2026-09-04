@@ -37,7 +37,7 @@ afterEach(() => {
   delete (globalThis as {$?: JQueryStatic}).$
 })
 
-describe('ajaxCall', () => {
+describe(ajaxCall.name, () => {
   test('resolves with the response body', async () => {
     installAjaxMock({resolve: {id: 1}})
 
@@ -84,7 +84,7 @@ describe('ajaxCall', () => {
   })
 })
 
-describe('ajaxJsonCall', () => {
+describe(ajaxJsonCall.name, () => {
   test('sends a JSON content type when there is a body', async () => {
     const ajax = installAjaxMock({resolve: null})
 
@@ -105,7 +105,7 @@ describe('ajaxJsonCall', () => {
   })
 })
 
-describe('ajaxFormCall', () => {
+describe(ajaxFormCall.name, () => {
   test('sends form-urlencoded and disables caching', async () => {
     const ajax = installAjaxMock({resolve: null})
 
@@ -119,7 +119,7 @@ describe('ajaxFormCall', () => {
   })
 })
 
-describe('ajaxFormFileUpload', () => {
+describe(ajaxFormFileUpload.name, () => {
   test('lets jQuery pass FormData through untouched', async () => {
     const ajax = installAjaxMock({resolve: null})
     const data = new FormData()
@@ -151,7 +151,7 @@ describe('ajaxFormFileUpload', () => {
   })
 })
 
-describe('checkUrlExistence', () => {
+describe(checkUrlExistence.name, () => {
   test('is true when the HEAD request succeeds', async () => {
     installAjaxMock({resolve: ''})
 
@@ -165,7 +165,7 @@ describe('checkUrlExistence', () => {
   })
 })
 
-describe('sendBeacon', () => {
+describe(sendBeacon.name, () => {
   let beacon: ReturnType<typeof vi.fn>
 
   beforeEach(() => {
@@ -188,7 +188,7 @@ describe('sendBeacon', () => {
   })
 })
 
-describe('appendParamToRemedyCorsBug', () => {
+describe(appendParamToRemedyCorsBug.name, () => {
   test('starts a query string when the path has none', () => {
     expect(appendParamToRemedyCorsBug('/audio/a.mp3')).toBe('/audio/a.mp3?via=xmlHttpRequest')
   })

@@ -51,7 +51,7 @@ function download(disposition?: string) {
   return {promise, xhr}
 }
 
-describe('ajaxFileDownload', () => {
+describe(ajaxFileDownload.name, () => {
   let anchor: HTMLAnchorElement
 
   beforeEach(() => {

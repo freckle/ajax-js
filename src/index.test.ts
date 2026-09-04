@@ -8,7 +8,7 @@ describe('fromString / toString', () => {
   })
 })
 
-describe('parseLinkHeader', () => {
+describe(parseLinkHeader.name, () => {
   test('should correctly return the link when only one is given', () => {
     const res = parseLinkHeader('</3/students?limit=10&schools.id=2>; rel="first"')
     expect(res).toEqual({first: '/3/students?limit=10&schools.id=2'})
