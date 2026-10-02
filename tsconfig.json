@@ -1,21 +1,11 @@
 {
+  "extends": "@freckle/tsconfig/library.json",
   "compilerOptions": {
-    "target": "ES2023",
+    // The package touches the DOM (jQuery ajax), which the base lib does not include
     "lib": ["ES2023", "DOM"],
-    "module": "NodeNext",
-    "moduleResolution": "NodeNext",
-    "strict": true,
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "skipLibCheck": true,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-    "noEmitOnError": true,
-    "declaration": true,
     "rootDir": "src",
     "outDir": "dist",
+    // jquery for the DOM typings above, vitest/globals for the test files
     "types": ["jquery", "vitest/globals"]
   },
   "include": ["src/**/*.ts"]
